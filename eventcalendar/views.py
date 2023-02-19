@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
-from calendarapp.forms import SignupForm
+from calendar.forms import SignupForm
 
 def signup(request):
     forms = SignupForm()

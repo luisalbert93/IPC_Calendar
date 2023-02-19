@@ -1,5 +1,5 @@
 from django.contrib import admin
-from calendarapp.models import Event, EventMember
+from calendar.models import Event, EventMember
 
 
 class EventMemberAdmin(admin.ModelAdmin):
