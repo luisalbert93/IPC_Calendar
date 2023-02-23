@@ -109,18 +109,7 @@
             if (confirm('Are you sure you want to delete this event?')) {
               arg.event.remove();
                 var id = arg.event.id;
-                $.ajax({
-                type: "GET",
-                url: "{% url 'calendarapp:event_remove/{{ id }}' %}",
-                data: {'id': id},
-                success: function (data) {
-                    calendar.fullCalendar('refetchEvents');
-                    alert('Event Removed');
-                },
-                failure: function (data) {
-                    alert('There is a problem!!!');
-                }
-            });
+                
             }
           },
           editable: true,
